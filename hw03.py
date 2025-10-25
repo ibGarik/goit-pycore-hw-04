@@ -6,11 +6,7 @@ init(autoreset=True)
 
 
 def print_directory_structure(path: Path, indent: str = ""):
-    """
-    Рекурсивно виводить структуру директорії з кольоровим форматуванням.
-    :param path: шлях до директорії
-    :param indent: відступ для візуальної ієрархії
-    """
+
     for item in sorted(path.iterdir()):
         
         if item.name.lower() == "venv":
